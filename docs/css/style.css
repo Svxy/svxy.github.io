@@ -59,18 +59,30 @@ body {
     rgb(0, 36, 11) 0%,
     rgb(9, 86, 121) 0%,
     rgb(9, 63, 4) 0%,
-    rgb(22, 190, 16) 100%
+    rgb(19, 119, 16) 100%
   );
   color: #fff;
 }
 
 .contactSection {
+  margin-top: -20vh;
   background: linear-gradient(
     90deg,
     rgb(0, 36, 11) 0%,
     rgb(9, 86, 121) 0%,
     rgb(9, 63, 4) 0%,
-    rgb(22, 190, 16) 100%
+    rgb(19, 119, 16) 100%
+  );
+  color: #fff;
+}
+
+.githubSection {
+  background: linear-gradient(
+    90deg,
+    rgb(0, 36, 11) 0%,
+    rgb(9, 86, 121) 0%,
+    rgb(9, 63, 4) 0%,
+    rgb(19, 119, 16) 100%
   );
   color: #fff;
 }
@@ -95,7 +107,7 @@ body {
 }
 
 .chart .percent {
-  color: #000;
+  color: #fff;
   line-height: 152px;
   display: inline-block;
   font-size: 35px;
@@ -144,7 +156,7 @@ body {
     rgb(0, 36, 11) 0%,
     rgb(9, 86, 121) 0%,
     rgb(9, 63, 4) 0%,
-    rgb(22, 190, 16) 100%
+    rgb(19, 119, 16) 100%
   );
 }
 
@@ -174,6 +186,15 @@ body {
   border-radius: 2px;
 }
 
+.githubButton {
+  color: #fff;
+  padding: 15px 20px;
+  display: inline-block;
+  margin-top: 20px;
+  border: 1px solid #fff;
+  border-radius: 2px;
+}
+
 .contactButton:hover {
   text-decoration: none;
   color: #ffff;
@@ -182,7 +203,21 @@ body {
     rgb(0, 36, 11) 0%,
     rgb(9, 86, 121) 0%,
     rgb(9, 63, 4) 0%,
-    rgb(22, 190, 16) 100%
+    rgb(19, 119, 16) 100%
+  );
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.githubButton:hover {
+  text-decoration: none;
+  color: #ffff;
+  background: linear-gradient(
+    270deg,
+    rgb(0, 36, 11) 0%,
+    rgb(9, 86, 121) 0%,
+    rgb(9, 63, 4) 0%,
+    rgb(19, 119, 16) 100%
   );
   opacity: 0.7;
   transition: 0.3s;
@@ -206,14 +241,14 @@ body {
     rgb(0, 36, 11) 0%,
     rgb(9, 86, 121) 0%,
     rgb(9, 63, 4) 0%,
-    rgb(22, 190, 16) 100%
+    rgb(19, 119, 16) 100%
   );
   border-color: linear-gradient(
     270deg,
     rgb(0, 36, 11) 0%,
     rgb(9, 86, 121) 0%,
     rgb(9, 63, 4) 0%,
-    rgb(22, 190, 16) 100%
+    rgb(19, 119, 16) 100%
   );
   color: #fff;
 }
@@ -279,11 +314,11 @@ body {
   position: relative;
   display: inline-block;
 
-  -webkit-transition: all 0.2s linear, 0.5s;
-  -moz-transition: all 0.2s linear, 0.5s;
-  -o-transition: all 0.2s linear, 0.5s;
-  -ms-transition: all 0.2s linear, 0.5s;
-  -transition: all 0.2s linear, 0.5s;
+  -webkit-transition: all 0.2s linear, 1s;
+  -moz-transition: all 0.2s linear, 1s;
+  -o-transition: all 0.2s linear, 1s;
+  -ms-transition: all 0.2s linear, 1s;
+  -transition: all 0.2s linear, 1s;
 }
 
 .items .imageOverlay {
@@ -353,7 +388,7 @@ body {
     rgb(0, 36, 11) 0%,
     rgb(9, 86, 121) 0%,
     rgb(9, 63, 4) 0%,
-    rgb(22, 190, 16) 100%
+    rgb(19, 119, 16) 100%
   );
   padding: 20px 10px;
   z-index: 100;
