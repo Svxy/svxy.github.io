@@ -55,7 +55,7 @@ body {
 
 .skillsSection {
   background: linear-gradient(
-    270deg,
+    90deg,
     rgb(0, 36, 11) 0%,
     rgb(9, 86, 121) 0%,
     rgb(9, 63, 4) 0%,
@@ -152,7 +152,7 @@ body {
   margin-bottom: 10px;
   font-weight: 400;
   color: linear-gradient(
-    270deg,
+    90deg,
     rgb(0, 36, 11) 0%,
     rgb(9, 86, 121) 0%,
     rgb(9, 63, 4) 0%,
@@ -199,7 +199,7 @@ body {
   text-decoration: none;
   color: #ffff;
   background: linear-gradient(
-    270deg,
+    90deg,
     rgb(0, 36, 11) 0%,
     rgb(9, 86, 121) 0%,
     rgb(9, 63, 4) 0%,
@@ -213,7 +213,7 @@ body {
   text-decoration: none;
   color: #ffff;
   background: linear-gradient(
-    270deg,
+    90deg,
     rgb(0, 36, 11) 0%,
     rgb(9, 86, 121) 0%,
     rgb(9, 63, 4) 0%,
@@ -237,14 +237,14 @@ body {
 
 .filter .current {
   background: linear-gradient(
-    270deg,
+    90deg,
     rgb(0, 36, 11) 0%,
     rgb(9, 86, 121) 0%,
     rgb(9, 63, 4) 0%,
     rgb(19, 119, 16) 100%
   );
   border-color: linear-gradient(
-    270deg,
+    90deg,
     rgb(0, 36, 11) 0%,
     rgb(9, 86, 121) 0%,
     rgb(9, 63, 4) 0%,
