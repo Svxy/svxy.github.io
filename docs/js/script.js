@@ -6,13 +6,13 @@ $(document).ready(function () {
   });
 
   var typed = new Typed(".typed", {
-    strings: ["Self Taught", "Not Hireable", "I'll Develop Simple Sites For Free❤", "Frontend Web Developer", "Discord Bot Developer", "Web Game Developer"],
-    typeSpeed: 50,
-    startDelay: 900,
+    strings: ["Self Taught 🤓", "Frontend Web Developer ✔", "Web Game Developer 🎮", "Discord Bot Developer 🤖", "Coffee Lover ☕ / Cannabis Enthusiast 🌳", "Developing Simple Sites For Free ❤", "Contact me today 📩"],
+    typeSpeed: 60,
+    startDelay: 1200,
     showCursor: false,
     loop: true,
-    backDelay: 900,
-    backSpeed: 40,
+    backDelay: 1200,
+    backSpeed: 80,
   });
 
   $(".owl-carousel").owlCarousel({
@@ -42,7 +42,7 @@ $(document).ready(function () {
     if (window.pageYOffset > skillsTopOffset - $(window).height() + 200) {
       $(".chart").easyPieChart({
         easing: "easeInOut",
-        barColor: "#fff",
+        barColor: "#09ff00",
         trackColor: false,
         scaleColor: false,
         lineWidth: 4,
@@ -83,12 +83,6 @@ $(document).ready(function () {
     return false;
   });
 
-  $("#navigation li a").click(function (e) {
-    e.preventDefault();
-    var targetElement = $(this).attr("href");
-    var targetPosition = $(targetElement).offset().top;
-    $("html, body").animate({ scrollTop: targetPosition - 50 }, "slow");
-  });
 
   const nav = $("#navigation");
   const navTop = nav.offset().top;

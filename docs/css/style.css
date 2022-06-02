@@ -10,7 +10,7 @@ body {
   height: 100%;
   position: absolute;
   z-index: 3;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.335);
 }
 
 .slides-navigation {
@@ -37,16 +37,38 @@ body {
 
 .titleMessage .heading .main {
   font-size: 50px;
+  color: rgb(9, 255, 0);
 }
 
 .titleMessage .heading .sub {
   font-size: 23px;
+  color: rgb(9, 255, 0);
 }
 
+.titleMessage .heading #pfp {
+  margin-top: -15%;
+  border-radius: 90%;
+  border: solid 10px;
+  border-color: rgba(6, 170, 0, 30%);
+}
+
+@media screen and (max-width: 570px) {
+  .titleMessage .heading #pfp {
+    width: 225px;
+    height: width;
+    margin-top: -25%;
+  }
+}
+  
 .section {
-  background-color: rgb(27, 27, 27);
-  color: rgb(151, 150, 150);
+  background-color: rgb(8, 50, 0);
+  color: rgb(6, 170, 0);
   padding: 100px 0;
+}
+
+.section a {
+  color: rgb(9, 255, 0);
+  text-decoration: underline;
 }
 
 .aboutImage {
@@ -61,7 +83,7 @@ body {
     rgb(9, 63, 4) 0%,
     rgb(19, 119, 16) 100%
   );
-  color: #fff;
+  color: rgb(9, 255, 0);
 }
 
 .contactSection {
@@ -73,7 +95,19 @@ body {
     rgb(9, 63, 4) 0%,
     rgb(19, 119, 16) 100%
   );
-  color: #fff;
+  color: rgb(9, 255, 0);
+}
+
+.blogSection {
+  margin-top: -20vh;
+  background: linear-gradient(
+    90deg,
+    rgb(0, 36, 11) 0%,
+    rgb(9, 86, 121) 0%,
+    rgb(9, 63, 4) 0%,
+    rgb(19, 119, 16) 100%
+  );
+  color: rgb(9, 255, 0);
 }
 
 .githubSection {
@@ -84,7 +118,7 @@ body {
     rgb(9, 63, 4) 0%,
     rgb(19, 119, 16) 100%
   );
-  color: #fff;
+  color: rgb(9, 255, 0);
 }
 
 .skill {
@@ -107,7 +141,7 @@ body {
 }
 
 .chart .percent {
-  color: #fff;
+  color: rgb(9, 255, 0);
   line-height: 152px;
   display: inline-block;
   font-size: 35px;
@@ -186,6 +220,15 @@ body {
   border-radius: 2px;
 }
 
+.blogButton {
+  color: #fff;
+  padding: 15px 20px;
+  display: inline-block;
+  margin-top: 20px;
+  border: 1px solid #fff;
+  border-radius: 2px;
+}
+
 .githubButton {
   color: #fff;
   padding: 15px 20px;
@@ -196,6 +239,20 @@ body {
 }
 
 .contactButton:hover {
+  text-decoration: none;
+  color: #ffff;
+  background: linear-gradient(
+    90deg,
+    rgb(0, 36, 11) 0%,
+    rgb(9, 86, 121) 0%,
+    rgb(9, 63, 4) 0%,
+    rgb(19, 119, 16) 100%
+  );
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.blogButton:hover {
   text-decoration: none;
   color: #ffff;
   background: linear-gradient(
@@ -223,158 +280,15 @@ body {
   transition: 0.3s;
 }
 
-.filter a {
-  color: #bdc3c7;
-  border: 1px solid #bdc3c7;
-  padding: 10px 18px;
-  display: block;
-}
-
-.filter li {
-  display: inline-block;
-  padding: 5px;
-}
-
-.filter .current {
-  background: linear-gradient(
-    90deg,
-    rgb(0, 36, 11) 0%,
-    rgb(9, 86, 121) 0%,
-    rgb(9, 63, 4) 0%,
-    rgb(19, 119, 16) 100%
-  );
-  border-color: linear-gradient(
-    90deg,
-    rgb(0, 36, 11) 0%,
-    rgb(9, 86, 121) 0%,
-    rgb(9, 63, 4) 0%,
-    rgb(19, 119, 16) 100%
-  );
-  color: #fff;
-}
-
-.filter {
-  text-align: center;
-  width: 100%;
-}
-
 .section .heading {
   text-align: center;
   padding-bottom: 40px;
   width: 100%;
 }
 
-.items li {
-  display: inline-block;
-  padding: 5px;
-}
-
-.itemsContainer {
-  width: 100%;
-}
-
-.items li img {
-  width: 100%;
-
-  -webkit-transition: all 0.2s linear, 1s;
-  -moz-transition: all 0.2s linear, 1s;
-  -o-transition: all 0.2s linear, 1s;
-  -ms-transition: all 0.2s linear, 1s;
-  -transition: all 0.2s linear, 1s;
-}
-
-.items .item {
-  position: relative;
-  display: block;
-  overflow: hidden;
-}
-
-.items .icons {
-  position: absolute;
-  width: 90px;
-  height: 40px;
-  left: 50%;
-  top: 50%;
-  margin: -20px auto 0 -47px;
-  text-align: center;
-  z-index: 3;
-}
-
-.items .icons i {
-  text-shadow: 2px 2px 8px #fff;
-  color: #fff;
-  font-size: 20px;
-  margin-top: 9px;
-}
-
-.items a {
-  width: 40px;
-  height: 40px;
-  background-color: rgba(12, 36, 97, 0.3);
-  position: relative;
-  display: inline-block;
-
-  -webkit-transition: all 0.2s linear, 1s;
-  -moz-transition: all 0.2s linear, 1s;
-  -o-transition: all 0.2s linear, 1s;
-  -ms-transition: all 0.2s linear, 1s;
-  -transition: all 0.2s linear, 1s;
-}
-
-.items .imageOverlay {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.89);
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  opacity: 0;
-
-  -webkit-transition: all 0.2s linear, 1s;
-  -moz-transition: all 0.2s linear, 1s;
-  -o-transition: all 0.2s linear, 1s;
-  -ms-transition: all 0.2s linear, 1s;
-  -transition: all 0.2s linear, 1s;
-}
-
-.items .item:hover .imageOverlay {
-  color: rgb(6, 170, 0);
-  opacity: 1;
-}
-
-.items .openButton {
-  float: left;
-  left: -200px;
-}
-
-.items .projectLink {
-  float: right;
-  right: -200px;
-}
-
-.items .item:hover .openButton {
-  left: 0px;
-}
-
-.items .item:hover .projectLink {
-  right: 0px;
-}
-
-.items .item:hover img {
-  -webkit-transform: scale(1.05, 1.05);
-  -moz-transform: scale(1.05, 1.05);
-  -o-transform: scale(1.05, 1.05);
-  -ms-transform: scale(1.05, 1.05);
-  -transform: scale(1.05, 1.05);
-}
-
-.items {
-  padding: 0;
-}
-
 .copyrightSection {
-  background-color: #000;
-  color: #fff;
+  background-color: rgb(8, 50, 0);
+  color: rgb(9, 255, 0);
   padding: 30px 5px;
 }
 
@@ -400,7 +314,7 @@ body {
 }
 
 #navigation li a {
-  color: #fff;
+  color: rgb(9, 255, 0);
 }
 
 #navigation li a:hover {
