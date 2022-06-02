@@ -4,4 +4,4 @@
 
 ## View here:
 
-https://svxy.github.io
+https://tnyavnto.com
