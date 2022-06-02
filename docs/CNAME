@@ -1,1 +1,5 @@
-tnyavnto.dev
+Type,Host,Answer,TTL,Priority
+A,tnyavnto.com,185.199.108.153,300,
+A,tnyavnto.com,185.199.109.153,300,
+A,tnyavnto.com,185.199.110.153,300,
+A,tnyavnto.com,185.199.111.153,300,
