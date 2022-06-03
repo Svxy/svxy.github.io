@@ -296,6 +296,11 @@ body {
   margin: 0;
 }
 
+.copyrightSection a {
+  color: rgb(9, 255, 0);
+  text-decoration: underline;
+}
+
 #navigation {
   background: linear-gradient(
     90deg,
