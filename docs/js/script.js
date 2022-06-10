@@ -7,12 +7,12 @@ $(document).ready(function () {
 
   var typed = new Typed(".typed", {
     strings: ["Self Taught 🤓", "Frontend Web Developer ✔", "Web Game Developer 🎮", "Discord Bot Developer 🤖", "Coffee Lover ☕ / Cannabis Enthusiast 🌳", "Developing Simple Sites For Free ❤", "Contact me today 📩"],
-    typeSpeed: 60,
-    startDelay: 1200,
+    typeSpeed: 20,
+    startDelay: 1420,
     showCursor: false,
     loop: true,
-    backDelay: 1200,
-    backSpeed: 80,
+    backDelay: 1420,
+    backSpeed: 20,
   });
 
   $(".owl-carousel").owlCarousel({
