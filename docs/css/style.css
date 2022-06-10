@@ -58,33 +58,11 @@ body {
 }
 
 .titleMessage .heading #pfp {
-  position: relative;
   margin-top: -15%;
-  border-radius: 180px;
+  border-radius: 90%;
+  border: solid 8px;
   border-color: rgba(6, 170, 0, 30%);
-  transform: rotate(-10deg) skew(15deg) scale(0.8);
-  transition: 1.5s;
 }
-.titleMessage .heading #pfp img {
-  position: absolute;
-}
-.titleMessage .heading #pfp:hover img:nth-child(4) {
-  transform: translate(125px, -125px);
-  opacity: 1;
-}
-.titleMessage .heading #pfp:hover img:nth-child(3) {
-  transform: translate(100px, -100px);
-  opacity: 0.8;
-}
-.titleMessage .heading #pfp:hover img:nth-child(2) {
-  transform: translate(40px, -40px);
-  opacity: 0.6;
-}
-.titleMessage .heading #pfp:hover img:nth-child(1) {
-  transform: translate(20px, -20px);
-  opacity: 0.4;
-}
-
 
 @media screen and (max-width: 570px) {
   .titleMessage .heading #pfp {
