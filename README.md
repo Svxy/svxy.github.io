@@ -1,4 +1,4 @@
-<h1 align=center>Official personal portfolio. Copy and edit as you please</h1>
+<h1 align=center>Official personal portfolio.</h1>
 
 <br>
 
