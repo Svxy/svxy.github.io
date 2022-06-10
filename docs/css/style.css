@@ -61,7 +61,20 @@ body {
   margin-top: -15%;
   border-radius: 90%;
   border: solid 8px;
-  border-color: rgba(6, 170, 0, 30%);
+  border: double 5px transparent;
+  background-image: linear-gradient(white, white), linear-gradient(to right, rgba(6, 170, 0, 30%), rgba(6, 170, 0, 0.710));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 @media screen and (max-width: 570px) {
