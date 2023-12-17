@@ -1,0 +1,369 @@
+body {
+  font-size: 14px;
+  color: #333;
+  background-color: #fff;
+  letter-spacing: 1px;
+}
+
+::-webkit-scrollbar {
+  width: 18px;                            /* width of the entire scrollbar */
+}
+::-webkit-scrollbar-track {
+  background: rgb(50, 0, 0);            /* color of the tracking area */
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(170, 0, 0);    /* color of the scroll thumb */
+  border-radius: 90px;                    /* roundness of the scroll thumb */
+  border: 4px solid rgb(119, 16, 16);      /* creates padding around scroll thumb */
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.666);
+}
+
+.slides-navigation {
+  z-index: 6;
+}
+
+.titleMessage {
+  position: absolute;
+  width: 100%;
+  height: 250px;
+  top: 50%;
+  z-index: 5;
+  text-align: center;
+  margin-top: -125px;
+}
+
+.titleMessage .heading p {
+  color: #fff;
+  margin-top: 5vh;
+  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+  font-weight: 100;
+  letter-spacing: 7px;
+}
+
+.titleMessage .heading .main {
+  font-size: 50px;
+  color: rgb(255, 0, 0);
+}
+
+.titleMessage .heading .sub {
+  font-size: 23px;
+  color: rgb(255, 0, 0);
+}
+
+.titleMessage .heading #pfp {
+  margin-top: -15%;
+  border-radius: 90%;
+  border: solid 8px;
+  border: double 5px transparent;
+  background-image: linear-gradient(white, white), linear-gradient(to right, rgba(170, 0, 0, 0.3), rgba(170, 0, 0, 0.71));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .titleMessage .heading #pfp {
+    width: 225px;
+    height: width;
+    margin-top: -25%;
+  }
+}
+  
+.section {
+  background-color: rgb(50, 0, 0);
+  color: rgb(170, 0, 0);
+  padding: 80px 0;
+}
+
+.section a {
+  color: rgb(255, 0, 0);
+  text-decoration: underline;
+}
+
+.aboutImage {
+  max-width: 100%;
+}
+
+.skillsSection {
+  background: linear-gradient(
+    90deg,
+    rgb(36, 0, 0) 0%,
+    rgb(121, 9, 9) 0%,
+    rgb(63, 4, 4) 0%,
+    rgb(119, 16, 16) 100%
+  );
+  color: rgb(255, 0, 0);
+}
+
+.contactSection {
+  margin-top: -15vh;
+  background: linear-gradient(
+    90deg,
+    rgb(36, 0, 0) 0%,
+    rgb(121, 9, 9) 0%,
+    rgb(63, 4, 4) 0%,
+    rgb(119, 16, 16) 100%
+  );
+  color: rgb(255, 0, 0);
+}
+
+.blogSection {
+  margin-top: -15vh;
+  background: linear-gradient(
+    90deg,
+    rgb(36, 0, 0) 0%,
+    rgb(121, 9, 9) 0%,
+    rgb(63, 4, 4) 0%,
+    rgb(119, 16, 16) 100%
+  );
+  color: rgb(255, 0, 0);
+}
+
+.githubSection {
+  background: linear-gradient(
+    90deg,
+    rgb(36, 0, 0) 0%,
+    rgb(121, 9, 9) 0%,
+    rgb(63, 4, 4) 0%,
+    rgb(119, 16, 16) 100%
+  );
+  color: rgb(255, 0, 0);
+}
+
+.skill {
+  text-align: center;
+  margin-left: 10px;
+}
+
+.chart {
+  position: relative;
+  width: 152px;
+  height: 152px;
+  display: inline-block;
+  text-align: center;
+}
+
+.chart canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.chart .percent {
+  color: rgb(255, 0, 0);
+  line-height: 152px;
+  display: inline-block;
+  font-size: 35px;
+}
+
+.chart .percent:after {
+  content: "%";
+}
+
+.squareItem {
+  margin-top: 30px;
+  position: relative;
+}
+
+.squareInnerContainer {
+  position: relative;
+  padding: 50px 15px 35px;
+  text-align: center;
+  border: 2px solid #444;
+  border-top: none;
+}
+
+.squareInnerContainer:before,
+.squareInnerContainer:after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  width: 30%;
+  border-bottom: 2px solid #444;
+}
+
+.squareInnerContainer:before {
+  right: 0px;
+}
+
+.squareInnerContainer:after {
+  left: 0px;
+}
+
+.squareContent h2 {
+  font-size: 56px;
+  margin-bottom: 10px;
+  font-weight: 400;
+  color: linear-gradient(
+    90deg,
+    rgb(36, 0, 0) 0%,
+    rgb(121, 9, 9) 0%,
+    rgb(63, 4, 4) 0%,
+    rgb(119, 16, 16) 100%
+  );
+}
+
+.squareContent h3 {
+  font-size: 13px;
+  font-weight: 600px;
+  margin: 0;
+}
+
+.squareIcon {
+  position: absolute;
+  left: 50%;
+  top: -30px;
+  width: 40%;
+  height: 50px;
+  font-size: 45px;
+  margin-left: -20%;
+  color: #444;
+}
+
+.contactButton {
+  color: #fff;
+  padding: 15px 20px;
+  display: inline-block;
+  margin-top: 20px;
+  border: 1px solid #fff;
+  border-radius: 2px;
+}
+
+.blogButton {
+  color: #fff;
+  padding: 15px 20px;
+  display: inline-block;
+  margin-top: 20px;
+  border: 1px solid #fff;
+  border-radius: 2px;
+}
+
+.githubButton {
+  color: #fff;
+  padding: 15px 20px;
+  display: inline-block;
+  margin-top: 20px;
+  border: 1px solid #fff;
+  border-radius: 2px;
+}
+
+.contactButton:hover {
+  text-decoration: none;
+  color: #ffff;
+  background: linear-gradient(
+    90deg,
+    rgb(36, 0, 0) 0%,
+    rgb(121, 9, 9) 0%,
+    rgb(63, 4, 4) 0%,
+    rgb(119, 16, 16) 100%
+  );
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.blogButton:hover {
+  text-decoration: none;
+  color: #ffff;
+  background: linear-gradient(
+    90deg,
+    rgb(36, 0, 0) 0%,
+    rgb(121, 9, 9) 0%,
+    rgb(63, 4, 4) 0%,
+    rgb(119, 16, 16) 100%
+  );
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.githubButton:hover {
+  text-decoration: none;
+  color: #ffff;
+  background: linear-gradient(
+    90deg,
+    rgb(36, 0, 0) 0%,
+    rgb(121, 9, 9) 0%,
+    rgb(63, 4, 4) 0%,
+    rgb(119, 16, 16) 100%
+  );
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.section .heading {
+  text-align: center;
+  padding-bottom: 40px;
+  width: 100%;
+}
+
+.copyrightSection {
+  background-color: rgb(50, 0, 0);
+  color: rgb(255, 0, 0);
+  padding: 30px 5px;
+}
+
+.copyrightSection p {
+  margin: 0;
+}
+
+.copyrightSection a {
+  color: rgb(255, 0, 0);
+  text-decoration: underline;
+}
+
+#navigation {
+  background: linear-gradient(
+    90deg,
+    rgb(36, 0, 0) 0%,
+    rgb(121, 9, 9) 0%,
+    rgb(63, 4, 4) 0%,
+    rgb(119, 16, 16) 100%
+  );
+  padding: 20px 10px;
+  z-index: 100;
+  width: 100%;
+}
+
+#navigation li {
+  padding: 0 10px;
+}
+
+#navigation li a {
+  color: rgb(255, 0, 0);
+}
+
+#navigation li a:hover {
+  color: rgb(255, 0, 0);
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.navbar-brand,
+.navbar-brand:hover {
+  color: rgb(170, 0, 0);
+}
+
+.navbar-toggler-icon {
+  background: url(../img/menu.png);
+  background-size: 100%;
+}
+
+.fixedNav #navigation {
+  position: fixed;
+  top: 0;
+}
