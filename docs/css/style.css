@@ -17,6 +17,22 @@ body {
   border: 4px solid rgb(119, 16, 16);      /* creates padding around scroll thumb */
 }
 
+#shutdownButton {
+  background-color: #f44336; /* Red */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+#shutdownButton:hover {
+  background-color: #d32f2f;
+}
+
 .overlay {
   width: 100%;
   height: 100%;
