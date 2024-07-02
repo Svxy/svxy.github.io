@@ -7,11 +7,11 @@ $(document).ready(function () {
 
   var typed = new Typed(".typed", {
     strings: ["Mainer📍", "Frontend Web Developer ✔", "Web Game Developer 🎮", "Discord Bot Developer 🤖", "Apprentice Auto & Diesel Tech", "Cannabis Enthusiast 🌳", "Developing Simple Sites For Free ❤", "Contact me today 📩"],
-    typeSpeed: 20,
-    startDelay: 1420,
+    typeSpeed: 25,
+    startDelay: 1600,
     showCursor: false,
     loop: true,
-    backDelay: 1420,
+    backDelay: 1600,
     backSpeed: 20,
   });
 

@@ -82,6 +82,9 @@ body {
   background-origin: border-box;
   background-clip: content-box, border-box;
   animation: rotation 8s infinite linear;
+  image-rendering: optimizeQuality;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
 }
 
 @keyframes rotation {
